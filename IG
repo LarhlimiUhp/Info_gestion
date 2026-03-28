@@ -1,0 +1,868 @@
+## Formation Informatique de Gestion — ENCG Settat
+
+---
+
+| | |
+|---|---|
+| **Animateur** | A. Larhlimi — Expert IG |
+| **Institution** | ENCG Settat — Université Hassan 1er |
+| **Durée** | 2 heures |
+| **Modalité** | En ligne (Zoom) |
+| **Niveau** | Débutants |
+| **Outil** | Microsoft Excel (principes applicables à Google Sheets) |
+
+---
+
+## 📋 Programme de la formation
+
+| | Horaire | Bloc | Contenu |
+|---|---|---|---|
+| 🎯 | 0 – 10 min | Accueil & Cadrage | Objectifs, programme, sondage niveau |
+| 📂 | 10 – 30 min | Bloc 1 — Fondamentaux | Interface, navigation, formats, raccourcis |
+| 🔢 | 30 – 65 min | Bloc 2 — Formules & Fonctions | SOMME, SI, NB.SI, RECHERCHEV, XLOOKUP |
+| ☕ | 65 – 70 min | Pause active | Mini-exercice chronométré |
+| 📊 | 70 – 105 min | Bloc 3 — Analyse & Visualisation | TCD, graphiques, mise en forme conditionnelle |
+| 🏆 | 105 – 115 min | Bloc 4 — Mise en pratique | Cas pratique ENCG contextualisé |
+| ✅ | 115 – 120 min | Synthèse & Perspectives | Récap, raccourcis, ressources |
+
+---
+
+## 🎯 Objectifs de la formation
+
+À l'issue de cette formation, vous serez capables de :
+
+1. **Maîtriser l'interface Excel** et naviguer efficacement dans un classeur
+2. **Construire des formules** avec les fonctions essentielles (SOMME, SI, RECHERCHEV…)
+3. **Créer des tableaux croisés dynamiques** et des graphiques professionnels
+4. **Appliquer ces compétences** à des cas concrets de gestion (notes, budgets, tableaux de bord)
+
+---
+
+## 📊 Sondage de départ
+
+> **Quel est votre niveau actuel sur Excel ?**
+
+| Niveau | Description |
+|---|---|
+| 🟢 **Débutant** | Je connais peu ou pas Excel |
+| 🟡 **Intermédiaire** | Je sais faire des formules simples (SOMME, SI) |
+| 🔴 **Avancé** | J'utilise TCD, RECHERCHEV, voire des macros VBA |
+
+💬 *Tapez votre réponse dans le chat Zoom !*
+
+---
+
+---
+
+# 📂 Bloc 1 — Fondamentaux
+
+> ⏱ **20 minutes** — Interface • Navigation • Formats • Raccourcis
+
+---
+
+## 📂 L'interface Excel : les zones clés
+
+### Structure générale
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│ 🎀 RUBAN — Accueil | Insertion | Formules | Données | ...   │
+├──────────────────────────────────────────────────────────────┤
+│ fx  =SOMME(B2:B10)                    ← Barre de formule    │
+├─────┬──────────────┬────────────┬───────────┬────────────────┤
+│     │      A       │     B      │     C     │       D        │
+├─────┼──────────────┼────────────┼───────────┼────────────────┤
+│  1  │ Produit      │ Prix (MAD) │ Quantité  │ Total          │
+│  2  │ Huile d'olive│    45,00   │    20     │ 900,00         │
+│  3  │ Dattes Mejh. │   120,00   │    15     │ 1 800,00       │
+└─────┴──────────────┴────────────┴───────────┴────────────────┘
+│ Feuil1 │ Feuil2 │ Feuil3 │              SOMME: 2 700,00     │
+```
+
+### Points essentiels
+
+- 📌 **Cellule active** = intersection d'une ligne et d'une colonne (ex : `B2`)
+- 📌 **Onglets de feuilles** en bas du classeur
+- 📌 **Barre d'état** (en bas à droite) affiche SOMME, MOYENNE, NB de la sélection
+- 📌 **Plage nommée** : sélectionnez une zone → zone Nom (en haut à gauche) → tapez un nom
+
+---
+
+## 🧭 Navigation et sélection rapides
+
+### Sélection
+
+| Raccourci | Action |
+|---|---|
+| `Ctrl + A` | Tout sélectionner |
+| `Shift + Clic` | Sélection étendue |
+| `Ctrl + Clic` | Sélection multiple (non contiguë) |
+| `Ctrl + Espace` | Sélectionner la colonne entière |
+| `Shift + Espace` | Sélectionner la ligne entière |
+| `Ctrl + Shift + Fin` | Sélectionner jusqu'à la dernière cellule utilisée |
+
+### Déplacement
+
+| Raccourci | Action |
+|---|---|
+| `Ctrl + ↓/↑/←/→` | Sauter au bout des données |
+| `Ctrl + Home` | Aller en A1 |
+| `Ctrl + End` | Dernière cellule utilisée |
+| `Ctrl + G` | Boîte « Atteindre » |
+| `F5` | Navigation rapide |
+| `Ctrl + Page Up/Down` | Changer de feuille |
+
+---
+
+## 🔤 Formats de cellules
+
+| Format | Exemple | Raccourci / Accès | Usage en gestion |
+|---|---|---|---|
+| Nombre | 1 234,56 | `Ctrl+Shift+1` | Quantités, scores |
+| Monnaie (MAD) | 4 500,00 MAD | Format > Monnaie > MAD | Prix, budgets, CA |
+| Date | 15/03/2026 | `Ctrl+Shift+3` | Échéances, planning |
+| Pourcentage | 87,5 % | `Ctrl+Shift+5` | Taux, parts de marché |
+| Texte | ABC123 | Format > Texte | Codes, CNE, identifiants |
+| Personnalisé | # ##0,00 "MAD" | `Ctrl+1` > Personnalisé | Format sur mesure |
+
+> 💡 **Astuce :** `Ctrl+1` ouvre la boîte de dialogue « Format de cellule » complète.
+
+---
+
+## ⌨️ Raccourcis clavier essentiels
+
+| Raccourci | Action |
+|---|---|
+| `Ctrl + C / V / X` | Copier / Coller / Couper |
+| `Ctrl + Z / Y` | Annuler / Rétablir |
+| `Ctrl + S` | Enregistrer |
+| `F2` | Éditer la cellule active |
+| `F4` | Répéter l'action / Figer une référence ($) |
+| `Ctrl + Shift + L` | Activer les filtres |
+| `Alt + =` | Somme automatique |
+| `Ctrl + ;` | Insérer la date du jour |
+| `Ctrl + D` | Recopier vers le bas |
+| `Ctrl + Shift + +` | Insérer une ligne/colonne |
+
+---
+
+## ✅ Validation des données & listes déroulantes
+
+### Étapes de création
+
+1. **Sélectionnez** la plage cible (ex : `C2:C100`)
+2. **Données** → Validation des données
+3. **Autoriser** : Liste → Source : `Casablanca;Rabat;Settat;Marrakech`
+
+### Résultat
+
+| N° | Étudiant | Ville ▼ | Filière |
+|---|---|---|---|
+| 1 | Amine Belhaj | Settat | Finance |
+| 2 | Fatima Zahra M. | Casablanca | Marketing |
+| 3 | Youssef El Idrissi | Rabat | Management |
+
+> 💡 La liste déroulante **évite les erreurs de saisie** et **standardise les données**.
+
+---
+
+---
+
+# 🔢 Bloc 2 — Formules & Fonctions
+
+> ⏱ **35 minutes** — SOMME • SI • NB.SI • RECHERCHEV • XLOOKUP • Texte • Date
+
+---
+
+## 🔢 Fiche Fonction : SOMME & MOYENNE
+
+`[CALCUL]`
+
+### SOMME
+
+```excel
+=SOMME(B2:B10)
+```
+
+Additionne toutes les valeurs d'une plage.
+
+### MOYENNE
+
+```excel
+=MOYENNE(B2:B10)
+```
+
+Calcule la moyenne arithmétique.
+
+### 📋 Exemple : notes des étudiants
+
+|   | A | B |
+|---|---|---|
+| 1 | **Étudiant** | **Note /20** |
+| 2 | Amine Belhaj | 16,5 |
+| 3 | Sara Mansouri | 12,0 |
+| 4 | Youssef El Idrissi | 14,0 |
+| 5 | Khadija Bennani | 18,0 |
+| **6** | **Total** | **60,5** |
+| **7** | **Moyenne** | **15,125** |
+
+**Formules utilisées :**
+
+```excel
+B6 : =SOMME(B2:B5)    →  60,5
+B7 : =MOYENNE(B2:B5)  →  15,125
+```
+
+---
+
+## 📏 Fiche Fonction : MIN, MAX, NB, NBVAL
+
+`[STATISTIQUE]`
+
+| Fonction | Syntaxe | Description | Résultat (sur l'exemple précédent) |
+|---|---|---|---|
+| **MIN** | `=MIN(B2:B5)` | Plus petite valeur | → **12,0** |
+| **MAX** | `=MAX(B2:B5)` | Plus grande valeur | → **18,0** |
+| **NB** | `=NB(B2:B5)` | Nombre de cellules numériques | → **4** |
+| **NBVAL** | `=NBVAL(A2:A5)` | Nombre de cellules non vides | → **4** |
+
+> 💡 **NB** compte uniquement les nombres • **NBVAL** compte toute cellule non vide (texte, nombre…)
+
+---
+
+## 🔀 Fiche Fonction : SI (IF)
+
+`[LOGIQUE]`
+
+### Syntaxe
+
+```excel
+=SI( test_logique ; valeur_si_vrai ; valeur_si_faux )
+```
+
+### Exemple : attribuer un résultat automatique
+
+```excel
+=SI(B2>=10;"Admis";"Ajourné")
+```
+
+| | A | B | C |
+|---|---|---|---|
+| 1 | **Étudiant** | **Note** | **Résultat** |
+| 2 | Amine Belhaj | 16,5 | ✅ Admis |
+| 3 | Omar Tazi | 8,0 | ❌ Ajourné |
+| 4 | Fatima Z. Alaoui | 14,0 | ✅ Admis |
+
+### SI imbriqué (mentions)
+
+```excel
+=SI(B2>=16;"TB";SI(B2>=14;"Bien";SI(B2>=12;"AB";SI(B2>=10;"Passable";"Ajourné"))))
+```
+
+> ⚠️ Les SI imbriqués deviennent vite illisibles au-delà de 3 niveaux. Préférez `SI.CONDITIONS`.
+
+---
+
+## 🔀 Fiche Fonction : SI.CONDITIONS (IFS)
+
+`[LOGIQUE]`
+
+*Alternative élégante au SI imbriqué — Excel 2019+ / 365*
+
+### Syntaxe
+
+```excel
+=SI.CONDITIONS( test1 ; val1 ; test2 ; val2 ; test3 ; val3 ; … )
+```
+
+### Exemple concret
+
+```excel
+=SI.CONDITIONS(
+    B2>=16 ; "Très Bien" ;
+    B2>=14 ; "Bien" ;
+    B2>=12 ; "Assez Bien" ;
+    B2>=10 ; "Passable" ;
+    VRAI   ; "Ajourné"
+)
+```
+
+### ⚖️ Comparaison
+
+| SI imbriqué | SI.CONDITIONS |
+|---|---|
+| Parenthèses complexes | Lecture linéaire |
+| Toutes versions | Excel 2019+ / 365 |
+| Risque d'erreur élevé | Plus lisible et maintenable |
+
+---
+
+## 📊 Fiche Fonction : NB.SI & SOMME.SI
+
+`[STATISTIQUE CONDITIONNELLE]`
+
+### NB.SI (COUNTIF)
+
+```excel
+=NB.SI(C2:C20;"Settat")
+```
+
+→ Compte les étudiants de Settat.
+
+### SOMME.SI (SUMIF)
+
+```excel
+=SOMME.SI(A2:A20;"Produit X";D2:D20)
+```
+
+→ Somme des ventes du Produit X.
+
+### 📋 Exemple : analyse des ventes par ville
+
+| | A – Ville | B – Commercial | C – Montant (MAD) |
+|---|---|---|---|
+| 2 | Casablanca | Hassan K. | 45 000 |
+| 3 | Settat | Amina R. | 32 000 |
+| 4 | Casablanca | Rachid B. | 58 000 |
+| 5 | Rabat | Nadia L. | 41 000 |
+| 6 | Settat | Karim Z. | 29 500 |
+
+**Résultats :**
+
+```excel
+=NB.SI(A2:A6;"Casablanca")         →  2
+=SOMME.SI(A2:A6;"Settat";C2:C6)   →  61 500 MAD
+```
+
+---
+
+## 🔍 Fiche Fonction : RECHERCHEV (VLOOKUP)
+
+`[RECHERCHE]`
+
+*La fonction la plus demandée en gestion !*
+
+### Syntaxe
+
+```excel
+=RECHERCHEV( valeur_cherchée ; table ; n°_colonne ; FAUX )
+```
+
+### Exemple
+
+**Table de référence (Feuille « Barème »)**
+
+| A – Code | B – Produit | C – Prix MAD |
+|---|---|---|
+| P001 | Thé Menthe Premium | 45,00 |
+| P002 | Huile Argan Bio | 180,00 |
+| P003 | Savon noir naturel | 35,00 |
+
+**Recherche dans la feuille « Commandes »**
+
+```excel
+=RECHERCHEV(A2;Barème!A:C;3;FAUX)
+```
+
+→ Cherche le code `A2` dans la table Barème, retourne la colonne 3 (Prix).
+`FAUX` = correspondance exacte.
+
+### ⚠️ Pièges courants
+
+- La valeur cherchée doit être dans la **1ʳᵉ colonne** de la table
+- Toujours mettre `FAUX` (correspondance exacte) sauf pour des plages
+- Erreur `#N/A` = valeur non trouvée → vérifier les espaces, le format
+
+---
+
+## 🔍 Fiche Fonction : INDEX + EQUIV
+
+`[RECHERCHE AVANCÉE]`
+
+*Plus puissant que RECHERCHEV : cherche dans n'importe quelle direction.*
+
+### EQUIV (MATCH)
+
+```excel
+=EQUIV( valeur_cherchée ; plage_recherche ; 0 )
+```
+
+→ Retourne la **position** (n° de ligne) de la valeur trouvée.
+
+### INDEX
+
+```excel
+=INDEX( plage_résultat ; n°_ligne )
+```
+
+→ Retourne la **valeur** à la position donnée.
+
+### 🔗 Combinaison INDEX + EQUIV
+
+```excel
+=INDEX( C2:C100 ; EQUIV( "P002" ; A2:A100 ; 0 ) )
+```
+
+→ `EQUIV` trouve que "P002" est en position **2** → `INDEX` retourne `C3` → **180,00 MAD**
+
+> 💡 **Avantage :** contrairement à RECHERCHEV, la colonne de recherche peut être **à droite** de la colonne résultat.
+
+---
+
+## 📝 Fonctions Texte & Date
+
+### Fonctions Texte `[TEXTE]`
+
+| Formule | Description |
+|---|---|
+| `=A2&" "&B2` | Concaténer prénom + nom |
+| `=GAUCHE(A2;3)` | 3 premiers caractères |
+| `=MAJUSCULE(A2)` | Convertir en MAJUSCULES |
+| `=STXT(A2;3;5)` | Extraire 5 caractères à partir du 3ᵉ |
+
+### Fonctions Date `[DATE]`
+
+| Formule | Description |
+|---|---|
+| `=AUJOURD'HUI()` | Date du jour |
+| `=MAINTENANT()` | Date + heure actuelle |
+| `=MOIS(A2)` | Extrait le mois |
+| `=DATEDIF(A2;B2;"y")` | Nombre d'années entre 2 dates |
+
+### Astuce concaténation moderne (Excel 365)
+
+```excel
+=CONCAT(A2;" ";B2)
+=ASSEMBLER.TEXTE(" ";VRAI;A2:D2)
+```
+
+---
+
+## 🏋️ Exercice : Formules en action
+
+> ⏱ **10 minutes**
+
+### Étape 1
+
+Ouvrez un nouveau classeur → Créez un tableau avec les colonnes :
+**Nom, Prénom, Note CC, Note Exam**
+
+### Étape 2
+
+Saisissez **6 étudiants** avec des notes variées (0 à 20).
+
+### Étape 3
+
+Ajoutez les colonnes calculées :
+
+- **Moyenne pondérée** = `(CC × 0,4) + (Exam × 0,6)` → formule
+- **Mention** = `SI.CONDITIONS(…)` avec les seuils TB/Bien/AB/Passable/Ajourné
+- **Résultat** = `SI(Moy>=10;"Admis";"Ajourné")`
+
+---
+
+## ☕ Pause active — 5 min
+
+### 🧠 Mini-quiz : Quelle formule utiliser ?
+
+> « Je veux compter combien d'étudiants ont obtenu une note **supérieure ou égale à 10** »
+>
+> A) NB.SI &emsp; B) SOMME.SI &emsp; C) RECHERCHEV &emsp; D) NB
+
+💬 *Réponse dans le chat ! (indice : on « compte » avec un critère…)*
+
+<details>
+<summary>✅ Réponse</summary>
+
+**A) NB.SI** — On veut **compter** des cellules qui respectent un **critère**.
+
+```excel
+=NB.SI(B2:B30;">=10")
+```
+
+</details>
+
+---
+
+---
+
+# 📊 Bloc 3 — Analyse & Visualisation
+
+> ⏱ **35 minutes** — TCD • Graphiques • Mise en forme conditionnelle • Filtres
+
+---
+
+## 📊 Tableaux Croisés Dynamiques (TCD)
+
+*L'outil n°1 pour synthétiser de grandes quantités de données.*
+
+### Création en 3 étapes
+
+**1.** Sélectionnez vos données (avec en-têtes)
+- `Ctrl+A` si données bien structurées
+
+**2.** Insertion → Tableau Croisé Dynamique
+- Choisir « Nouvelle feuille » ou « Feuille existante »
+
+**3.** Glissez les champs :
+- **Lignes** → Ville
+- **Valeurs** → CA (Somme)
+- **Filtres** → Année
+
+### Résultat TCD
+
+| Ville | Somme de CA (MAD) |
+|---|---:|
+| Casablanca | 2 450 000 |
+| Rabat | 1 890 000 |
+| Settat | 980 000 |
+| Marrakech | 1 560 000 |
+| **Total** | **6 880 000** |
+
+---
+
+## 📊 TCD : Segments (Slicers) & Regroupement
+
+### 🎛️ Segments (Slicers)
+
+Filtres visuels interactifs pour vos TCD :
+
+1. Cliquez dans le TCD
+2. **Analyse de TCD** → Insérer un segment
+3. Cochez les champs (Ville, Année, Produit)
+4. Cliquez sur les boutons pour filtrer
+
+```
+[ Casablanca ✓ ]  [ Rabat ]  [ Settat ✓ ]  [ Marrakech ]
+```
+
+### 📆 Regroupement par dates
+
+Regrouper des dates en mois, trimestres, années :
+
+1. Clic droit sur une date dans le TCD
+2. **Grouper** → Mois / Trimestre / Année
+3. Le TCD se restructure automatiquement
+
+| Trimestre | CA (MAD) |
+|---|---:|
+| T1-2026 | 1 820 000 |
+| T2-2026 | 2 150 000 |
+| T3-2026 | 1 450 000 |
+| T4-2026 | 1 460 000 |
+
+---
+
+## 📈 Graphiques Excel : bien choisir son type
+
+| Type | Quand l'utiliser | Exemple |
+|---|---|---|
+| 📊 **Histogramme** | Comparer des catégories | CA par ville |
+| 📈 **Courbe** | Montrer une évolution | Ventes mensuelles |
+| 🥧 **Secteurs (Camembert)** | Montrer des proportions | Parts de marché |
+| 📊📈 **Combiné** | 2 types sur un même axe | Barres CA + courbe marge |
+
+### Création
+
+> **Insertion → Graphique** | Clic droit → Modifier le type de graphique
+
+### Bonnes pratiques
+
+- Toujours ajouter un **titre** et une **légende**
+- Limiter à **5-7 catégories** maximum pour la lisibilité
+- Utiliser des **couleurs cohérentes** avec votre charte
+- Afficher les **étiquettes de données** quand nécessaire
+
+---
+
+## 🎨 Mise en forme conditionnelle
+
+*Colorez vos données pour repérer les tendances en un clin d'œil.*
+
+### 3 types principaux
+
+| Type | Accès | Usage |
+|---|---|---|
+| **Barres de données** | Accueil → MFC → Barres de données | Visualiser l'ampleur relative |
+| **Échelles de couleur** | Accueil → MFC → Échelles de couleur (vert-jaune-rouge) | Repérer min/max rapidement |
+| **Jeux d'icônes** | Accueil → MFC → Jeux d'icônes (✅ ⚠️ ❌) | Signaler des seuils (OK/KO) |
+
+### Exemple : suivi des notes
+
+| Étudiant | Note /20 | Indicateur |
+|---|---|---|
+| Amine Belhaj | 18,0 🟩 | 🟢 |
+| Sara Mansouri | 12,5 🟨 | 🟡 |
+| Omar Tazi | 7,0 🟥 | 🔴 |
+| Khadija Bennani | 15,0 🟩 | 🟢 |
+
+**Règles :** Vert ≥ 14 | Jaune 10–14 | Rouge < 10
+
+### Création d'une règle personnalisée
+
+1. Sélectionnez la plage de notes
+2. **Accueil** → Mise en forme conditionnelle → Nouvelle règle
+3. « Mettre en forme uniquement les cellules qui contiennent »
+4. Valeur de la cellule → inférieure à → `10`
+5. Format → Remplissage rouge
+
+---
+
+---
+
+# 🏆 Cas pratiques ENCG
+
+---
+
+## 🏆 Cas pratique 1 : Tableau de suivi des notes
+
+**Contexte :** Vous êtes responsable d'un module à l'ENCG. Créez un tableau de suivi complet.
+
+### Tableau attendu
+
+| N° | Nom complet | CC /20 | Exam /20 | Moy. Pond. | Mention | Résultat |
+|---|---|---|---|---|---|---|
+| 1 | Amine Belhaj | 15 | 17 | **16,2** | Très Bien | ✅ Admis |
+| 2 | Sara Mansouri | 10 | 13 | **11,8** | Assez Bien | ✅ Admis |
+| 3 | Omar Tazi | 6 | 9 | **7,8** | — | ❌ Ajourné |
+| 4 | Khadija Bennani | 18 | 16 | **16,8** | Très Bien | ✅ Admis |
+
+### Formules à utiliser
+
+```excel
+Moy. Pondérée  =  C2*0,4 + D2*0,6
+
+Mention  =  SI.CONDITIONS(E2>=16;"TB"; E2>=14;"Bien"; E2>=12;"AB"; E2>=10;"Passable"; VRAI;"—")
+
+Résultat  =  SI(E2>=10;"Admis ✅";"Ajourné ❌")
+```
+
+### Statistiques en bas du tableau
+
+```excel
+=SOMME(E2:E30)         → Total des moyennes
+=MOYENNE(E2:E30)       → Moyenne générale
+=MAX(E2:E30)           → Meilleure note
+=MIN(E2:E30)           → Plus faible note
+=NB.SI(G2:G30;"Admis*")   → Nombre d'admis
+=NB.SI(G2:G30;"Ajourné*") → Nombre d'ajournés
+```
+
+---
+
+## 🏆 Cas pratique 2 : Budget prévisionnel
+
+**Contexte :** Préparez le budget annuel d'une association étudiante de l'ENCG.
+
+### Tableau attendu
+
+| Catégorie | Janv. | Fév. | Mars | … | Total | % du Total |
+|---|---:|---:|---:|---|---:|---|
+| Cotisations | 5 000 | 3 000 | 1 500 | … | **15 000** | 37,5 % |
+| Sponsoring | 0 | 10 000 | 5 000 | … | **20 000** | 50,0 % |
+| Événements | 2 000 | 0 | 3 000 | … | **5 000** | 12,5 % |
+| **TOTAL RECETTES** | **7 000** | **13 000** | **9 500** | **…** | **40 000** | **100 %** |
+
+### Compétences mobilisées
+
+- ✅ `SOMME` pour les totaux lignes et colonnes
+- ✅ Pourcentage = Ligne / Total × 100 (format %)
+- ✅ Mise en forme conditionnelle pour les dépassements
+- ✅ Graphique secteurs pour la répartition des recettes
+- ✅ Graphique courbe pour l'évolution mensuelle
+
+---
+
+---
+
+# 🏆 Bloc 4 — Mise en pratique
+
+> ⏱ **10 minutes** — Application concrète : Tableau de bord commercial
+
+---
+
+## 🏆 Cas pratique 3 : Tableau de bord commercial
+
+**Contexte :** Créez un dashboard pour suivre les ventes d'une PME marocaine.
+
+### KPIs clés
+
+| 💰 CA Total | 📈 Croissance | 📊 Marge nette | 🏆 Meilleure ville |
+|---|---|---|---|
+| **6 880 000 MAD** | **+12,5 %** | **18,3 %** | **Casablanca** |
+
+### Tableau de suivi par ville
+
+| Ville | CA (MAD) | Objectif | Écart | Statut |
+|---|---:|---:|---:|---|
+| Casablanca | 2 450 000 | 2 200 000 | +250 000 | ✅ |
+| Rabat | 1 890 000 | 2 000 000 | -110 000 | ⚠️ |
+| Settat | 980 000 | 900 000 | +80 000 | ✅ |
+| Marrakech | 1 560 000 | 1 700 000 | -140 000 | ⚠️ |
+
+### Formules clés
+
+```excel
+Écart       = CA - Objectif
+Statut      = SI(Écart>=0;"✅";"⚠️")
+Croissance  = (CA_N - CA_N-1) / CA_N-1
+```
+
+---
+
+---
+
+# 📋 Récapitulatif des fonctions essentielles
+
+| Fonction | Syntaxe | Description | Catégorie |
+|---|---|---|---|
+| **SOMME** | `=SOMME(plage)` | Additionner des valeurs | Calcul |
+| **MOYENNE** | `=MOYENNE(plage)` | Moyenne arithmétique | Calcul |
+| **MIN / MAX** | `=MIN(plage)` / `=MAX(plage)` | Valeurs extrêmes | Calcul |
+| **NB / NBVAL** | `=NB(plage)` / `=NBVAL(plage)` | Compter les cellules | Statistique |
+| **SI** | `=SI(test;vrai;faux)` | Test conditionnel | Logique |
+| **SI.CONDITIONS** | `=SI.CONDITIONS(t1;v1;…)` | SI multiples sans imbriquer | Logique |
+| **NB.SI** | `=NB.SI(plage;"critère")` | Compter avec condition | Stat. cond. |
+| **SOMME.SI** | `=SOMME.SI(plage;"crit";somme)` | Sommer avec condition | Stat. cond. |
+| **RECHERCHEV** | `=RECHERCHEV(val;tab;col;0)` | Chercher dans une table | Recherche |
+| **INDEX+EQUIV** | `=INDEX(res;EQUIV(val;rech;0))` | Recherche flexible | Recherche |
+| **CONCATENER** | `=A1&" "&B1` | Assembler du texte | Texte |
+| **AUJOURD'HUI** | `=AUJOURD'HUI()` | Date du jour | Date |
+
+---
+
+---
+
+# 📚 Ressources pour aller plus loin
+
+| | Ressource | URL | Description |
+|---|---|---|---|
+| 🌐 | Support Microsoft Excel | support.microsoft.com/fr-fr/excel | Documentation officielle complète |
+| 📺 | Chaîne YouTube Excel | youtube.com/@ExcelIsFun | Tutoriels vidéo étape par étape |
+| 📘 | Excel Exercices | excel-exercice.com | Exercices pratiques par niveau |
+| 🎓 | Coursera — Excel Skills | coursera.org | Certificat professionnel (gratuit avec audit) |
+| 🔧 | Excel Jet — Raccourcis | exceljet.net/shortcuts | Liste complète des raccourcis clavier |
+
+> 🚀 **Pratiquez 15 min/jour pendant 2 semaines = progrès garantis !**
+
+---
+
+---
+
+# 🎉 Merci pour votre participation !
+
+## Des questions ?
+
+| | |
+|---|---|
+| **Animateur** | A. Larhlimi |
+| **Spécialité** | Expert Informatique de Gestion |
+| **Institution** | ENCG Settat — Université Hassan 1er |
+
+---
+
+*Formation Informatique de Gestion — Excel — ENCG Settat — 2026*
+
+---
+
+## Annexe A — Pour aller plus loin (Niveau intermédiaire)
+
+### Fonctions matricielles (Excel 365)
+
+```excel
+=FILTRE(A2:D100; C2:C100="Settat")    → Filtre dynamique
+=TRI(A2:D100; 3; -1)                   → Tri décroissant par colonne 3
+=UNIQUE(B2:B100)                        → Valeurs uniques sans doublon
+```
+
+### XLOOKUP (Excel 365)
+
+```excel
+=XLOOKUP("P002"; A2:A100; C2:C100; "Non trouvé")
+```
+
+Avantages par rapport à RECHERCHEV :
+- Cherche dans **n'importe quelle direction**
+- **Valeur par défaut** si non trouvé (plus de #N/A)
+- Syntaxe plus **simple et lisible**
+
+### Power Query
+
+1. **Données** → Obtenir des données → À partir d'un fichier/base
+2. **Transformations** : supprimer colonnes, filtrer, fusionner, pivoter
+3. **Charger** dans une feuille ou un modèle de données
+4. **Actualiser** automatiquement quand la source change
+
+### Protection
+
+```
+Feuille  : Révision → Protéger la feuille (autoriser certaines cellules)
+Classeur : Révision → Protéger le classeur (structure des feuilles)
+Cellules : Format de cellule → Protection → Verrouillée / Masquée
+```
+
+### Macros VBA — Première macro
+
+1. **Affichage** → Macros → Enregistrer une macro
+2. Effectuez les actions (mise en forme, copie, tri…)
+3. **Arrêter** l'enregistrement
+4. `Alt + F11` pour voir/modifier le code VBA
+5. Attribuer un raccourci clavier à la macro
+
+---
+
+## Annexe B — Équivalences Google Sheets
+
+| Excel (FR) | Google Sheets | Remarque |
+|---|---|---|
+| `RECHERCHEV` | `VLOOKUP` | Syntaxe anglaise obligatoire |
+| `SI` | `IF` | |
+| `NB.SI` | `COUNTIF` | |
+| `SOMME.SI` | `SUMIF` | |
+| `SI.CONDITIONS` | `IFS` | |
+| — | `=IMPORTRANGE("url";"Feuil1!A:D")` | Importer depuis un autre fichier |
+| — | `=QUERY(A:D;"SELECT A,C WHERE B='Settat'")` | Requête SQL sur les données |
+| — | `=GOOGLETRANSLATE(A2;"fr";"en")` | Traduction automatique |
+| — | `=GOOGLEFINANCE("AAPL";"price")` | Cours de bourse en temps réel |
+
+### Avantages Google Sheets
+
+- 🤝 **Collaboration en temps réel** (partage, commentaires, historique)
+- 📋 **Google Forms** → données directement dans Sheets
+- 🔌 **Add-ons** : Supermetrics, Form Publisher, Yet Another Mail Merge
+- ☁️ **Cloud natif** : accès partout, sauvegarde automatique
+
+### Cas pratiques Google Sheets
+
+1. **Formulaire d'inscription** étudiant connecté à un tableau de suivi
+2. **Tableau de bord partagé** entre enseignants (notes, absences)
+3. **Collecte et analyse** d'une enquête terrain via Google Forms → Sheets
+
+---
+
+*Document de référence — Formation Informatique de Gestion*
+*ENCG Settat — Université Hassan 1er — 2026*
+*Auteur : A. Larhlimi*
+```
+
+Le fichier Markdown a été enregistré. Voici ce qu'il contient :
+
+---
+
+## 📄 Structure du document Markdown
+
+| Section | Contenu |
+|---|---|
+| **En-tête** | Titre, métadonnées (animateur, durée, niveau, modalité) |
+| **Programme** | Tableau minuté des 7 blocs de la formation |
+| **Objectifs** | 4 objectifs avec verbes d'action |
+| **Bloc 1 — Fondamentaux** | Interface, navigation, formats de cellules, raccourcis clavier, validation des données |
+| **Bloc 2 — Formules & Fonctions** | 8 fiches fonction complètes (SOMME, MOYENNE, MIN/MAX, SI, SI.CONDITIONS, NB.SI/SOMME.SI, RECHERCHEV, INDEX+EQUIV, Texte & Date) |
+| **Exercice pratique** | Consignes en 3 étapes + mini-quiz pause active avec réponse masquée |
+| **Bloc 3 — Analyse & Visualisation** | TCD (création, segments, regroupement), graphiques, mise en forme conditionnelle |
+| **3 Cas pratiques** | Notes étudiants, budget association, tableau de bord commercial |
+| **Récapitulatif** | Tableau des 12 fonctions essentielles |
+| **Ressources** | 5 liens commentés |
+| **Annexe A** | Niveau intermédiaire (XLOOKUP, FILTRE, Power Query, VBA, protection) |
+| **Annexe B** | Équivalences Google Sheets + fonctions spécifiques + cas pratiques |
+
